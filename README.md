@@ -15,26 +15,26 @@ MDP를 위한 Value iteration 구현. Q-Learning을 위한 Q-Value iteration 구
 ## Usage
 0. Run Xming(WSL)
     ```console
-    $export DISPLAY=localhost:0.0
+    $ export DISPLAY=localhost:0.0
     ```
 1. To see how value iteration works
     ```console
-    $python2.7 gridworld.py -a value -i 100 -k 10
+    $ python2.7 gridworld.py -a value -i 100 -k 10
     ```
 2. To see how Q-Learning works   
     
     manual
     ```console
-    $python2.7 gridworld.py -a q -k 5 -m
+    $ python2.7 gridworld.py -a q -k 5 -m
     ```
     automatic
     ```console
-    $python2.7 gridworld.py -a q -k 100
+    $ python2.7 gridworld.py -a q -k 100
     ```
 3. To see how Q-Learning AI play pacman   
     training : 2000, test : 10 (displaying), layout : smallGrid
     ```console
-    $python2.7 pacman.py -p PacmanQAgent -x 2000 -n 2010 -l smallGrid
+    $ python2.7 pacman.py -p PacmanQAgent -x 2000 -n 2010 -l smallGrid
     ```
 
 ## Value iteration - `valueIterationAgents.py`
